@@ -165,7 +165,7 @@ And the output is something like:
 <|User|>: <image>
 <|ref|>The giraffe at the back.<|/ref|>.
 
-<|Assistant|>: <|ref|>The giraffe at the back.<|/ref|><|det|>[[580, 270, 999, 900]]<|/det|><｜end▁of▁sentence｜>
+<|Assistant|>: <|ref|>The giraffe at the back.<|/ref|><|det|>[[580, 270, 999, 900]]<|/det|><｜end_of_sentence｜>
 ```
 
 ### Simple Inference Example with Multiple Images
@@ -239,7 +239,7 @@ This is image_2: <image>
 This is image_3: <image>
  Can you tell me what are in the images?
 
-<|Assistant|>: The images show three different types of vegetables. Image_1 features carrots, which are orange with green tops. Image_2 displays corn cobs, which are yellow with green husks. Image_3 contains raw pork ribs, which are pinkish-red with some marbling.<｜end▁of▁sentence｜>
+<|Assistant|>: The images show three different types of vegetables. Image_1 features carrots, which are orange with green tops. Image_2 displays corn cobs, which are yellow with green husks. Image_3 contains raw pork ribs, which are pinkish-red with some marbling.<｜end_of_sentence｜>
 ```
 
 ### Simple Inference Example with Incremental Prefilling
@@ -332,7 +332,7 @@ This is image_2: <image>
 This is image_3: <image>
  Can you tell me what are in the images?
 
-<|Assistant|>: The first image contains carrots. The second image contains corn. The third image contains meat.<｜end▁of▁sentence｜>
+<|Assistant|>: The first image contains carrots. The second image contains corn. The third image contains meat.<｜end_of_sentence｜>
 ```
 
 Parse the bounding box coordinates, please refer to [parse_ref_bbox](https://github.com/deepseek-ai/DeepSeek-VL2/blob/main/deepseek_vl2/serve/app_modules/utils.py#L270-L298).
@@ -402,3 +402,7 @@ This code repository is licensed under [MIT License](./LICENSE-CODE). The use of
 ## 7. Contact
 
 If you have any questions, please raise an issue or contact us at [service@deepseek.com](mailto:service@deepseek.com).
+
+---
+
+Related project: [Qwen2.5-VL](https://github.com/QwenLM/Qwen2.5-VL)
